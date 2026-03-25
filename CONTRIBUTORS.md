@@ -13,7 +13,7 @@
 | 組員 A | （填名字）| `feature/member-a` | 新增訊息時間戳 | ⬜ |
 | 組員 B | （填名字）| `feature/member-b` | 新增清除對話按鈕 | ⬜ |
 | 組員 C | （填名字）| `feature/member-c` | 新增字數統計 | ⬜ |
-| 組員 D | 黃柏豪 | `feature/member-d` | 新增深色模式 | ⬜ |
+| 組員 D | 黃柏豪  | `feature/member-d` | 新增深色模式 | ⬜ |
 | 組員 E | （填名字）| `feature/member-e` | 新增鍵盤快捷鍵說明 | ⬜ |
 
 狀態：⬜ 未開始 / 🔄 進行中 / ✅ 已完成 / 🔀 PR 已開 / ✔️ 已 Merge
