@@ -168,7 +168,7 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 |          |          |              |         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
+|      黃柏豪    |  feature/member-d        | 深色模式頁面樣式與切換邏輯             |    https://github.com/Shanyii/w5-collab-group-One/pull/4     | ✅  |
 
 ---
 
@@ -237,6 +237,8 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 **（組員姓名）：**
 
 **（組員姓名）：**
+
+**黃柏豪：** 這次作業與小組練習不僅讓我更加掌握如何使用 GitBash 和 Github，Pull Request 設定與 Merge 的流程，也讓我理解到 Code Review 與團隊協作的重要性。沒有 Stand-up meeting 即便是小小的團隊協作也是一大挑戰。
 
 ---
 
