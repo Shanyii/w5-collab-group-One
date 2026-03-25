@@ -10,8 +10,8 @@
 | 項目        | 填寫           |
 | ----------- | -------------- |
 | 組別        | 第 1 組       |
-| 組員        |                |
-| GitHub Repo |                |
+| 組員        |               ，沈靖恩 1321025 |
+| GitHub Repo | https://github.com/Shanyii/w5-collab-group-One.git |
 | 報告日期    | 2025 / 03 / 25 |
 
 ---
