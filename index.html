@@ -12,6 +12,8 @@
       <!-- 組長任務：把標題改成你們組的名字 -->
       <h1>🤖 第 X 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
+      <!-- 組員 D 任務：深色模式切換按鈕 -->
+      <button id="dark-mode-btn" onclick="toggleDarkMode()" title="切換深色模式">🌙</button>
     </header>
 
     <!-- 組員 A 任務：在 .message 裡加上時間戳 span -->
@@ -63,7 +65,12 @@
 
     // 組員 B 任務：在這裡加 clearChat() 函數
     // 組員 C 任務：在這裡加字數統計更新邏輯
-    // 組員 D 任務：在這裡加深色模式切換函數
+    // 組員 D 任務：深色模式切換函數
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      const btn = document.getElementById('dark-mode-btn');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    }
   </script>
 
 </body>

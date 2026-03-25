@@ -13,7 +13,7 @@
 | 組員 A | （填名字）| `feature/member-a` | 新增訊息時間戳 | ⬜ |
 | 組員 B | （填名字）| `feature/member-b` | 新增清除對話按鈕 | ⬜ |
 | 組員 C | （填名字）| `feature/member-c` | 新增字數統計 | ⬜ |
-| 組員 D | （填名字）| `feature/member-d` | 新增深色模式 | ⬜ |
+| 組員 D | 黃柏豪 | `feature/member-d` | 新增深色模式 | ⬜ |
 | 組員 E | （填名字）| `feature/member-e` | 新增鍵盤快捷鍵說明 | ⬜ |
 
 狀態：⬜ 未開始 / 🔄 進行中 / ✅ 已完成 / 🔀 PR 已開 / ✔️ 已 Merge
@@ -54,10 +54,10 @@
 - [ ] Review 其他組員的 PR（至少 2 個）
 
 ### 組員 D（`feature/member-d` branch）
-- [ ] 在 header 加深色模式切換按鈕（`🌙`）
-- [ ] 在 `style.css` 加上 `body.dark` 相關樣式
-- [ ] 在 `<script>` 加上切換函數
-- [ ] 填寫完整 PR 描述
+- [V] 在 header 加深色模式切換按鈕（`🌙`）
+- [V] 在 `style.css` 加上 `body.dark` 相關樣式
+- [V] 在 `<script>` 加上切換函數
+- [V] 填寫完整 PR 描述
 - [ ] 收到 2 位成員 review 後回應 comment
 - [ ] Review 其他組員的 PR（至少 2 個）
 
