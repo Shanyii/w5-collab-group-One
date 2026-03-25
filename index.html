@@ -28,6 +28,7 @@
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
+      <button class="clear-btn" onclick="clearChat()">🗑️ 清除</button>
     </div>
 
     <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
@@ -62,6 +63,10 @@
     });
 
     // 組員 B 任務：在這裡加 clearChat() 函數
+    function clearChat() {
+      const chatBox = document.getElementById('chat-box');
+      chatBox.innerHTML = '<div class="message bot">嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉</div>';
+    }
     // 組員 C 任務：在這裡加字數統計更新邏輯
     // 組員 D 任務：在這裡加深色模式切換函數
   </script>

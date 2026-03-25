@@ -80,6 +80,11 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 .input-area input:focus { border-color: #4f8ef7; }
 
 /* ── 組員 B 任務：在這裡加清除按鈕樣式 ── */
+.clear-btn {
+  background: #e74c3c !important;
+  color: white;
+}
+.clear-btn:hover { opacity: 0.85; }
 .input-area button {
   background: #4f8ef7;
   color: white;
