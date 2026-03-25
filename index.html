@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
   <title>我們組的 Chatbot</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
     <header>
       <!-- 組長任務：把標題改成你們組的名字 -->
-      <h1>🤖 第 X 組的 Chatbot</h1>
+      <h1>🤖 第 一 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
+      <!-- 組員 D 任務：深色模式切換按鈕 -->
+      <button id="dark-mode-btn" onclick="toggleDarkMode()" title="切換深色模式">🌙</button>
     </header>
 
     <!-- 組員 A 任務：在 .message 裡加上時間戳 span -->
@@ -28,6 +32,7 @@
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
       <!-- 組員 B 任務：在這裡加清除按鈕 -->
+      <button class="clear-btn" onclick="clearChat()">🗑️ 清除</button>
     </div>
 
     <!-- 組員 E 任務：在這裡加鍵盤快捷鍵說明 -->
@@ -67,14 +72,24 @@
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    document.getElementById('user-input').addEventListener('keypress', function(e) {
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
 
     // 組員 B 任務：在這裡加 clearChat() 函數
+    function clearChat() {
+      const chatBox = document.getElementById('chat-box');
+      chatBox.innerHTML = '<div class="message bot">嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉</div>';
+    }
     // 組員 C 任務：在這裡加字數統計更新邏輯
-    // 組員 D 任務：在這裡加深色模式切換函數
+    // 組員 D 任務：深色模式切換函數
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      const btn = document.getElementById('dark-mode-btn');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    }
   </script>
 
 </body>
+
 </html>
