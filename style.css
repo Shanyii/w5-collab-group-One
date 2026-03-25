@@ -27,6 +27,7 @@ header {
   background: #4f8ef7;
   color: white;
   padding: 20px 24px;
+  position: relative;
 }
 header h1 { font-size: 20px; }
 header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
@@ -55,6 +56,13 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 }
 
 /* ── 組員 A 任務：在這裡加 .timestamp 樣式 ── */
+.timestamp {
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  opacity: 0.5;
+  margin-top: 4px;
+}
 .message.user {
   background: #4f8ef7;
   color: white;
@@ -97,7 +105,59 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 
 .input-area button:hover { opacity: 0.85; }
 
-/* ── 組員 D 任務：在這裡加 body.dark 深色模式樣式 ── */
+/* ── 組員 D 任務：深色模式切換按鈕 ── */
+#dark-mode-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+  border-radius: 8px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#dark-mode-btn:hover { background: rgba(255,255,255,0.15); }
+
+/* ── 組員 D 任務：body.dark 深色模式樣式 ── */
+body.dark {
+  background-color: #1a1a2e;
+}
+body.dark .container {
+  background: #16213e;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+body.dark header {
+  background: #0f3460;
+}
+body.dark #chat-box {
+  background: #16213e;
+}
+body.dark .message.bot {
+  background: #0f3460;
+  color: #e0e0e0;
+}
+body.dark .message.user {
+  background: #4f8ef7;
+  color: white;
+}
+body.dark .input-area {
+  border-top-color: #0f3460;
+  background: #16213e;
+}
+body.dark .input-area input {
+  background: #1a1a2e;
+  border-color: #0f3460;
+  color: #e0e0e0;
+}
+body.dark .input-area input:focus { border-color: #4f8ef7; }
+body.dark .input-area input::placeholder { color: #666; }
+body.dark footer {
+  background: #16213e;
+  border-top-color: #0f3460;
+  color: #666;
+}
 
 /* ── 組員 E 任務：在這裡加 footer 樣式 ── */
 footer {

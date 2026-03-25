@@ -12,6 +12,8 @@
       <!-- 組長任務：把標題改成你們組的名字 -->
       <h1>🤖 第 X 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
+      <!-- 組員 D 任務：深色模式切換按鈕 -->
+      <button id="dark-mode-btn" onclick="toggleDarkMode()" title="切換深色模式">🌙</button>
     </header>
 
     <!-- 組員 A 任務：在 .message 裡加上時間戳 span -->
@@ -43,15 +45,25 @@
 
       if (!text) return;
 
+      const now = new Date();
+      const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+
       const userDiv = document.createElement('div');
       userDiv.className = 'message user';
-      // 組員 A 任務：在這裡加入時間戳
       userDiv.textContent = text;
+      const userTime = document.createElement('span');
+      userTime.className = 'timestamp';
+      userTime.textContent = timeStr;
+      userDiv.appendChild(userTime);
       chatBox.appendChild(userDiv);
 
       const botDiv = document.createElement('div');
       botDiv.className = 'message bot';
       botDiv.textContent = `你說了「${text}」！`;
+      const botTime = document.createElement('span');
+      botTime.className = 'timestamp';
+      botTime.textContent = timeStr;
+      botDiv.appendChild(botTime);
       chatBox.appendChild(botDiv);
 
       input.value = '';
@@ -68,7 +80,12 @@
       chatBox.innerHTML = '<div class="message bot">嗨！這是我們組用 PR 協作做出來的 Chatbot 🎉</div>';
     }
     // 組員 C 任務：在這裡加字數統計更新邏輯
-    // 組員 D 任務：在這裡加深色模式切換函數
+    // 組員 D 任務：深色模式切換函數
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      const btn = document.getElementById('dark-mode-btn');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    }
   </script>
 
 </body>

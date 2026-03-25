@@ -166,9 +166,9 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 | -------- | -------- | ------------ | ------- | -------- |
 |          |          |              |         | ✅ / ❌  |
 |          |          |              |         | ✅ / ❌  |
-| 沈靖恩 | member-b | 新增刪除對話按鈕 |         | ✅ / ❌  |
+| 沈靖恩 | member-b | 新增對話刪除按鈕 | https://github.com/Shanyii/w5-collab-group-One/tree/mamber-b | ✅ |
 |          |          |              |         | ✅ / ❌  |
-|          |          |              |         | ✅ / ❌  |
+|      黃柏豪    |  feature/member-d        | 深色模式頁面樣式與切換邏輯             |    https://github.com/Shanyii/w5-collab-group-One/pull/4     | ✅  |
 
 ---
 
@@ -222,9 +222,9 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 ---
 
-**問題 2：**
+**問題 2：** Git 無法 commit，顯示 "Author identity unknown" 設定 git config user.name 和 git config user.email
 
-解決方式：
+解決方式：設定 git config user.name 和 git config user.email
 
 ---
 
@@ -236,7 +236,9 @@ blocking: 這個會影響其他功能，需要修一下才能 merge。
 
 **（組員姓名）：**
 
-**（組員姓名）：**
+**沈靖恩：**今天的課程讓我更熟悉如何在多人合作時，在專案中建立新分支、pull request，以及了解code review在多人合作之大型專案中的重要。
+
+**黃柏豪：** 這次作業與小組練習不僅讓我更加掌握如何使用 GitBash 和 Github，Pull Request 設定與 Merge 的流程，也讓我理解到 Code Review 與團隊協作的重要性。沒有 Stand-up meeting 即便是小小的團隊協作也是一大挑戰。
 
 ---
 
