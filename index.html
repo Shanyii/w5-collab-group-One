@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
   <title>我們組的 Chatbot</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
     <header>
       <!-- 組長任務：把標題改成你們組的名字 -->
-      <h1>🤖 第 X 組的 Chatbot</h1>
+      <h1>🤖 第 一 組的 Chatbot</h1>
       <p class="subtitle">W5 PR 協作練習</p>
       <!-- 組員 D 任務：深色模式切換按鈕 -->
       <button id="dark-mode-btn" onclick="toggleDarkMode()" title="切換深色模式">🌙</button>
@@ -70,7 +72,7 @@
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    document.getElementById('user-input').addEventListener('keypress', function(e) {
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
 
@@ -89,4 +91,5 @@
   </script>
 
 </body>
+
 </html>
